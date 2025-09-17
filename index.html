@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>SBA 4:MY TASK MANAGER</h1>
+    <div class="main-container">
+      <input type="text" id="taskInput" placeholder="Enter a new task" />
+      <label for="categoryInput">Category:</label>
+      <input type="text" id="categoryInput" placeholder="Enter Category" />
+      <label for="statusInput">Status:</label>
+      <select id="statusInput">
+        <option class="green" value="Completed">Completed</option>
+        <option class="yellow" value="Ongoing">Ongoing</option>
+        <option class="red" value="Not Started">Not Started</option>
+      </select>
+      <label for="dueDateInput">Due Date:</label>
+      <input type="date" id="dueDateInput" />
+      <button id="addTaskButton">Add Task</button>
+      <button id="removeTaskButton">Remove Last Task</button>
+      <button id="clearTasksButton">Clear All Tasks</button>
+      <button id="sortTasksButton">Sort by Due Date</button>
+
+      <ul id="taskList">
+        <!-- ///Tasks will be added here dynamically -->
+      </ul>
+
+      
+    </div>
+  </body>
+</html>
